@@ -1,0 +1,10 @@
+{
+    "questions": [
+      "What is a function in JavaScript?",
+      "What is the difference between arrow functions and normal functions in JavaScript?",
+      "Explain closures in JavaScript.",
+      "What is a Promise in JavaScript?",
+      "What is async/await in JavaScript?"
+    ]
+  }
+  

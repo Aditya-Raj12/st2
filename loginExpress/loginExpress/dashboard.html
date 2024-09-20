@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <h1 id="name"></h1>
+</body>
+<script>
+    const name=document.getElementById('name');
+    async function fetchdata(){
+         const fetchData = await fetch('http://localhost:3000/user-details');
+         const response = await fetchData.json();
+         console.log(response)
+         name.innerText = `Name ${response}`;
+     }
+
+     fetchdata();
+</script>
+</html>
